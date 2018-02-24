@@ -25,6 +25,28 @@ Highcharts.chart('chart', {
   },
   data: {
     csv: csv,
+    complete: function(options) {
+      var series = options.series;
+      var n = series.length;
+
+      // 最新数据排最前
+      for (var i = 0; i < n; ++i) {
+        series[i].index = n-1 - i;
+      }
+      // 默认展示最新三个月的数据
+      for (var i = 0; i < 3 && n - i > 0; ++i) {
+        series[n-1 - i].visible = true;
+      }
+      // 默认展示去年同月数据
+      if (n - 12 >= 0) {
+        series[n - 12].visible = true;
+      }
+    }
+  },
+  plotOptions: {
+    line: {
+      visible: false,
+    },
   },
   title: {
     text: '历年拍牌数据',
