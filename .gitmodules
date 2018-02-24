@@ -1,0 +1,3 @@
+[submodule "hupai-data"]
+	path = hupai-data
+	url = https://github.com/pallxk/hupai-data.git

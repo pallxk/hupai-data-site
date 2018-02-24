@@ -1,0 +1,45 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+
+# HTML
+# Following Google HTML/CSS Style Guide
+# https://google.github.io/styleguide/htmlcssguide.xml
+[*.{htm,html}]
+indent_style = space
+indent_size = 2
+
+# CSS
+# Following Google HTML/CSS Style Guide
+# https://google.github.io/styleguide/htmlcssguide.xml
+[*.{css,less,sass,scss}]
+indent_style = space
+indent_size = 2
+
+# Javascript
+# Following Google JavaScript Style Guide
+# https://google.github.io/styleguide/javascriptguide.xml
+[*.js]
+indent_style = space
+indent_size = 2
+
+# npm's package.json
+# Following the style of generated package.json by `npm init`
+[package.json]
+indent_style = space
+indent_size = 2
+
+# Bower
+# Following the style of generated bower.json by `bower init`
+[bower.json]
+indent_style = space
+indent_size = 2

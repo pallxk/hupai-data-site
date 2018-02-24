@@ -1,0 +1,13 @@
+{
+  "name": "hupai-data-site",
+  "version": "0.1.0",
+  "description": "沪牌拍牌数据可视化",
+  "scripts": {},
+  "author": "pallxk <github@pallxk.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "highcharts": "^6.0.7",
+    "jquery": "^3.3.1"
+  }
+}
