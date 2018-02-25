@@ -19,10 +19,6 @@ Highcharts.chart('chart', {
   chart: {
     zoomType: 'x',
   },
-  credits: {
-    href: 'http://51hupai.org/',
-    text: '数据来源：51hupai.org'
-  },
   data: {
     csv: csv,
     complete: function(options) {
@@ -48,11 +44,11 @@ Highcharts.chart('chart', {
       visible: false,
     },
   },
+  subtitle: {
+    text: '图表：https://hupai.tips 数据：http://51hupai.org',
+  },
   title: {
     text: '历年拍牌数据',
-  },
-  subtitle: {
-    text: 'https://hupai.tips',
   },
   tooltip: {
     shared: true,
