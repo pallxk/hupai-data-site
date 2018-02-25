@@ -1,0 +1,4 @@
+#!/bin/sh
+
+npm run build \
+  && s3_website push

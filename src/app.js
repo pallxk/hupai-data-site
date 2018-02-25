@@ -1,3 +1,5 @@
+import './app.css';
+
 Highcharts.setOptions({
   lang: {
     contextButtonTitle: '导出图表',

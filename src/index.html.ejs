@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#00008b">
+    <title>沪牌拍牌数据可视化</title>
+
+    <link rel="stylesheet" href="lib/pace-progress/themes/blue/pace-theme-flash.css">
+    <link rel="stylesheet" href="lib/highcharts/highcharts.css">
+
+  </head>
+  <body>
+
+    <div id="chart">
+      <center>
+        <strong>历年拍牌数据</strong><br>
+        资源加载中...
+      </center>
+    </div>
+
+  <% if (process.env.NODE_ENV === 'production') { %>
+    <script src="lib/pace-progress/pace.min.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/highcharts/highcharts.js"></script>
+    <script src="lib/highcharts/modules/data.js"></script>
+    <script src="lib/highcharts/modules/exporting.js"></script>
+  <% } else { %>
+    <script src="lib/pace-progress/pace.js"></script>
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/highcharts/highcharts.src.js"></script>
+    <script src="lib/highcharts/modules/data.src.js"></script>
+    <script src="lib/highcharts/modules/exporting.src.js"></script>
+  <% } %>
+
+  </body>
+</html>
