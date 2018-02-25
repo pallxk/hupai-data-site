@@ -11,6 +11,15 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 
 
+# YAML
+[*.{yml,yaml}]
+# Tab characters must not be used in indentation.
+indent_style = space
+# Code examples in YAML specifications use 2-space indentation.
+# Other numbers are also fine.
+indent_size = 2
+
+
 # HTML
 # Following Google HTML/CSS Style Guide
 # https://google.github.io/styleguide/htmlcssguide.xml
