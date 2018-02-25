@@ -54,13 +54,22 @@ Highcharts.chart('chart', {
     shared: true,
     valuePrefix: '¥',
   },
-  yAxis: {
-    min: 0,
-    tickInterval: 100,
-    title: {
-      text: '警示价差值',
+  yAxis: [
+    {
+      min: 0,
+      tickInterval: 100,
+      title: {
+        text: '最低可成交价与警示价差值',
+      },
     },
-  },
+    {
+      linkedTo: 0,
+      opposite: true,
+      title: {
+        text: '',
+      },
+    },
+  ],
 });
 
 });
