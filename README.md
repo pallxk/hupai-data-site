@@ -2,7 +2,7 @@
 
 图表化展示沪牌历年拍卖数据，为制定拍卖策略提供参考。
 
-![Windows Firefox 1024x768 截图](screenshots/screenshot-windows-firefox-1024x768.png)
+![Windows Firefox 截图](screenshots/screenshot-windows-firefox-880x660.png)
 
 
 ## 授权/LICENSE
