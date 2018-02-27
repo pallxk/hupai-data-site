@@ -36,6 +36,7 @@ module.exports = {
       },
     }),
     new CopyWebpackPlugin([
+      { from: 'icons', to: 'icons' },
       { from: 'hupai-data/delta.csv', to: 'delta.csv' },
     ]),
   ],
